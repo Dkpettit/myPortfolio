@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Robot+Slab:400,700&
+      display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/cca243d020.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devdave.png" alt="A picture logo." />
+      </div>
+      <button class="nav-toggle" areia aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <!-- double underscore indicates that this item is part of another item, intended for use with CSS -->
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+     <!-- Introduction -->
+     <section class="intro">
+      <h1 class="section__title section__title--intro">
+        <strong>Chatterbox</strong>
+      </h1>
+      <!-- double hyphen, there will be multiple section__title's this provides the ability to change just this element by class -->
+      <p class="section__subtitle section__subtitle--intro">
+        Chat App
+      </p>
+      <img
+        src="img/chatterbox.png"
+        height="250"
+        width="200"
+        alt=""
+        class="intro__img"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam</p>
+      <img src="img/chatterboxView.png" width="1000" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+        tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam</p>
+    </div>
+   
+    <!-- footer -->
+    <footer class="footer">
+      <a href="mailto:dkpettit@gmail.com" class="footer-link"
+        >dkpettit@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.com"><i class="fab fa-codepen"></i></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
