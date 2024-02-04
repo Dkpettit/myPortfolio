@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Pettit Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar justify-between">
+        <div class="container">
+            <h1 class="site-title">Dave Pettit Portfolio</h1>
+            <ul class="display-f">
+                <li class="ml-1 text-hover-secondary"><a href="#work">My Work</a></li>
+                <li class="ml-1 text-hover-secondary"><a href="#about">About Me</a></li>
+                <li class="ml-1 text-hover-secondary"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- intro -->
+    <div class="container mt-5">
+        <div class="row justify-center">
+            <div class="col-12-xs col-5-md">
+                <h2>
+                    <div class="font-xxl">Welcome</div>
+                    <div class="font-xxl text-secondary">I'm Dave Pettit</div>
+                </h2>
+                <p class="text-gray mt-2 mb-3">Full Stack Developer, Application Developer, Software Engineer</p>
+                <a href="#work" class="btn-outlined-secondary text-secondary text-hover-white">View My Work</a>
+            </div>
+            <div class="col-12-xs col-5-md">
+                <img src="./img/laptop.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <section class="bg-secondary-light-9 mt-5 pt-4 pb-4" id="about">
+        <div class="container">
+            <h2 class="mb-2">About Me</h2>
+            <img class="br-lg" src="./img/avatar.jpg" alt="">
+            <p>
+                Hello, I'm Dave.
+            </p>
+            <p class="mt-1">
+                I'm a software developer that builds solutions for Desktop, Cloud and the Web. <br>I have varied experience and am "well Seasoned", I excel in positions that require a client-centric focus and attention to detail.<br>My resume includes working as a National Account Manager for a Large International Millwork Company, Operations Manager for an International Staffing Agency,  and I've owned multiple businesses including a Staffing Agency, and a Tow Truck Company.<br>At 50 years old I returned to Fanshawe College where I graduated on the Deans Honour Roll from the 3 year Advanced Diploma Computer Programmer Analyst Program.  I enjoy building Web apps, Desktop Apps, Utilities, and Office Automation Applications.  <br>I am an avid and quick learner.  I am currently focusing on Machine Learning, and building projects with an Arduino, as well as some projects with Raspberry PI.
+            </p>
+            <p class="m-1 text-hover-secondary"><a href="./assets/David Pettits Resume.pdf">Click here to view a printable version of my Resume</a></p>
+            
+        </div>
+        <div class="container">
+            <h3>Find me on the Internet</h3>
+            <a href="https://www.linkedin.com/in/davepettit" class="fa fa-linkedin br-lg"></a>
+            <a href="https://github.com/Dkpettit" class="fa fa-github br-lg"></a>
+        </div>
+    </section>
+
+    <!-- work section -->
+    <section id="work" class="mt-5">
+        <div class="container">
+            <h2 class="mb-2">Some of my work...</h2>
+            <div class="row gap-2">
+                <div class="col-12-xs col-6-md col-3-lg">
+                    <a href="https://dave-pettit-shows-gy25.onrender.com/">
+                        <div class="card p-0">
+                            <h3 class="card-title m-1">My Show Collection <span class="badge-orange text-white ml-1">New!</span></h3>
+                            <img src="./img/showsCollection.png" alt="A screenshot of the landing page for Dave Pettit's Show Collection" width="400" height="200">                        
+                            <p class="m-1 card-body"><span class="text-secondary">Click here to visit this site.</span> A MERN application that tracks what shows a user is watching, Users are authenticated against a MongoDB users database, assigned a JWT and logged in and out.  A user object is created in localstorage that can be accessed in the App.  Users can search for TV shows via a search that makes a call to an IMDB API exposed on RapidAPI.  Results are displayed in a React component and selected Shows can be added to the Shows DB on Mongo which stores the name, id, and poster url for the show.</p>
+                            <p class="m-1 text-hover-secondary"><a href="https://github.com/Dkpettit/mern-shows">View Code On Github</a></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12-xs col-6-md col-3-lg">
+                    <a href="https://dave-pettits-work-tracker.onrender.com">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">My Work Tracker</h3>
+                        <img src="./img/workTracker.png" alt="A screenshot of the landing page for Dave Pettit's Work Tracker App" width="400" height="200">
+                        <p class="m-1 card-body"><span class="text-secondary">Click here to visit this site</span> An application to track the work and Projects I'm working on.  MongoDB, Node, React, Graphql, Apollo Client -- both the backend and the frontend from Render.com.</p>
+                        <p class="m-1 text-hover-secondary"><a href="https://github.com/Dkpettit/WorkTracker">View Code On Github</a></p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-12-xs col-6-md col-3-lg">
+                    <a href="https://hailey-books-g8d9.onrender.com">
+                        <div class="card p-0">
+                            <h3 class="card-title m-1">My Book App</h3>
+                            <img src="./img/haileysBooks.png" alt="A screenshot of the landing page for Dave Pettit's Show Collection" width="400" height="200">
+                            <p class="m-1 card-body"><span class="text-secondary">Click here to visit this site</span> A Personal Library I created for my grand daughter Hailey, you can search for Books by title and add to your personal list. <br>A MERN application that tracks what books a user is reading, Users are authenticated against a MongoDB users database, assigned a JWT and logged in and out.  A user object is created in localstorage that can be accessed in the App.  Users can search for books via a search that makes a call to an API exposed on RapidAPI.  Results are displayed in a React component and selected Books can be added to the Books DB on Mongo which stores the name, id, and cover url for the book</p>
+                            <p class="m-1 text-hover-secondary"><a href="https://github.com/Dkpettit/hailey-books">View Code On Github</a></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12-xs col-6-md col-3-lg">
+                    <a href="https://dkpettit.github.io">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">My Online Resume</h3>
+                        <img src="./img/dave.png" alt="A screenshot of the landing page for Dave Pettit's Show Collection" width="400" height="200">
+                        <p class="m-1 card-body"><span class="text-secondary">Click here to visit this site</span> A styled responsive HTML version of my resume, it's dynamically generated from a JSON file, which can be updated and refreshed.</p>
+                        <p class="m-1 text-hover-secondary"><a href="https://github.com/Dkpettit/hailey-books">View Code On Github</a></p>                        
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="row justify-center mt-2">
+                <button class="btn-secondary text-white font-md">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="mt-5 bg-secondary-light-9 p-3" id="contact">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;" class="form-secondary">
+                <h2 class="mb-2 mt-3">Get In Touch</h2>
+                <h6 class="m-1">Submitting this Form will launch your email application, please review and send the message.</h6>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Your Phone no." required>
+                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                <div class="row justify-center mt-2">
+                    <button class="btn-outlined-secondary text-secondary-light font-md" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>    
+
+    <!-- footer -->
+    <footer class="bg-gray-light-7 pt-3 pb-3 mt-5">
+        <div class="container">
+            copyright 2024 David Pettit
+        </div>
+    </footer>
+    <script>
+        function sendEmail(){
+            let message = document.getElementById("message").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let name = document.getElementById("name").value;
+
+            window.open(`mailto:dkpettit@gmail.com?subject=New Contact Form Submission&body=From: ${name} || Email: ${email} || Phone: ${phone} || Message: ${message}`);
+        }
+    </script>
+</body>
+</html>
